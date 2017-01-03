@@ -1,0 +1,4 @@
+platform :ios, '7.0' #手机的系统
+target 'Feyddy高德地图大全' do #工程名字
+pod 'AMap3DMap'  #3D地图 SDK（2D地图：AMap2DMap NO-IDFA版本：AMap3DMap-NO-IDFA，AMap2DMap-NO-IDFA）
+end
