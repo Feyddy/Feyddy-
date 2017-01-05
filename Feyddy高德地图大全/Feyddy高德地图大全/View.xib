@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="cmr-JA-t1K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryz-D0-qaT">
+                    <rect key="frame" x="20" y="99" width="560" height="30"/>
+                    <state key="normal" title="地图"/>
+                    <connections>
+                        <action selector="mapAction:" destination="-1" eventType="touchUpInside" id="Qwv-Kn-Jye"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ryz-D0-qaT" secondAttribute="trailing" constant="20" id="CJr-TN-6AJ"/>
+                <constraint firstItem="ryz-D0-qaT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="CXe-b9-SYU"/>
+                <constraint firstItem="ryz-D0-qaT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="99" id="MO9-BO-vsn"/>
+                <constraint firstAttribute="bottom" secondItem="ryz-D0-qaT" secondAttribute="bottom" constant="471" id="YVA-FS-LbC"/>
+            </constraints>
+            <point key="canvasLocation" x="332" y="370"/>
+        </view>
+    </objects>
+</document>
