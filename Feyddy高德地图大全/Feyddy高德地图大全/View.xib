@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -17,9 +17,21 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryz-D0-qaT">
                     <rect key="frame" x="20" y="99" width="560" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="地图"/>
                     <connections>
                         <action selector="mapAction:" destination="-1" eventType="touchUpInside" id="Qwv-Kn-Jye"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF0-hT-1YC">
+                    <rect key="frame" x="30" y="139" width="540" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.52882151550000001" blue="0.14351181099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DYv-gr-YYW"/>
+                    </constraints>
+                    <state key="normal" title="获取地图数据"/>
+                    <connections>
+                        <action selector="getMapData:" destination="-1" eventType="touchUpInside" id="cfp-jR-dXz"/>
                     </connections>
                 </button>
             </subviews>
@@ -28,8 +40,16 @@
                 <constraint firstAttribute="trailing" secondItem="ryz-D0-qaT" secondAttribute="trailing" constant="20" id="CJr-TN-6AJ"/>
                 <constraint firstItem="ryz-D0-qaT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="CXe-b9-SYU"/>
                 <constraint firstItem="ryz-D0-qaT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="99" id="MO9-BO-vsn"/>
+                <constraint firstItem="FF0-hT-1YC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="X9T-3K-i0G"/>
                 <constraint firstAttribute="bottom" secondItem="ryz-D0-qaT" secondAttribute="bottom" constant="471" id="YVA-FS-LbC"/>
+                <constraint firstAttribute="trailing" secondItem="FF0-hT-1YC" secondAttribute="trailing" constant="30" id="lYo-yZ-716"/>
+                <constraint firstItem="FF0-hT-1YC" firstAttribute="top" secondItem="ryz-D0-qaT" secondAttribute="bottom" constant="10" id="om9-N1-lkq"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="YVA-FS-LbC"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="332" y="370"/>
         </view>
     </objects>

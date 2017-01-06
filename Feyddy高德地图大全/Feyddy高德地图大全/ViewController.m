@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 #import "FDMapViewController.h"
-
-
+#import "FDGetMapDataViewController.h"
 
 @interface ViewController ()
 
@@ -34,6 +33,11 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)getMapData:(UIButton *)sender {
+    FDGetMapDataViewController *vc = [[FDGetMapDataViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

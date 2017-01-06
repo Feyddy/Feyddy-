@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7326A3B247610BDC90B2865B /* libPods-Feyddy高德地图大全.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1560960F23960392B865988 /* libPods-Feyddy高德地图大全.a */; };
-		B035E5E71E1DFAE300990740 /* FDMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B035E5E61E1DFAE300990740 /* FDMapViewController.m */; };
 		B035E5EA1E1DFBCC00990740 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = B035E5E91E1DFBCC00990740 /* View.xib */; };
 		B08B67781E1BAB99004A4A02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B08B67771E1BAB99004A4A02 /* main.m */; };
 		B08B677B1E1BAB99004A4A02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B08B677A1E1BAB99004A4A02 /* AppDelegate.m */; };
@@ -18,8 +17,13 @@
 		B08B67861E1BAB99004A4A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B08B67841E1BAB99004A4A02 /* LaunchScreen.storyboard */; };
 		B08B67911E1BAB99004A4A02 /* Feyddy______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B08B67901E1BAB99004A4A02 /* Feyddy______Tests.m */; };
 		B08B679C1E1BAB99004A4A02 /* Feyddy______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B08B679B1E1BAB99004A4A02 /* Feyddy______UITests.m */; };
-		B0DC3DA01E1E2B3B00694B00 /* FDCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DC3D9F1E1E2B3B00694B00 /* FDCalloutView.m */; };
-		B0DC3DA31E1E2C4000694B00 /* FDAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DC3DA21E1E2C4000694B00 /* FDAnnotationView.m */; };
+		F8676B961E1F5D590069A742 /* FDAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8676B911E1F5D590069A742 /* FDAnnotationView.m */; };
+		F8676B971E1F5D590069A742 /* FDCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8676B931E1F5D590069A742 /* FDCalloutView.m */; };
+		F8676B981E1F5D590069A742 /* FDMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8676B951E1F5D590069A742 /* FDMapViewController.m */; };
+		F8676B9B1E1F5DD30069A742 /* FDGetMapDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8676B9A1E1F5DD30069A742 /* FDGetMapDataViewController.m */; };
+		F8676B9D1E1F5ED80069A742 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8676B9C1E1F5ED80069A742 /* AMapSearchKit.framework */; };
+		F8676B9F1E1F5F3F0069A742 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8676B9E1E1F5F3F0069A742 /* AMapFoundationKit.framework */; };
+		F8F6A9231E1E915900174587 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F6A9221E1E915900174587 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +46,6 @@
 /* Begin PBXFileReference section */
 		543280F88EDB2AFFD8EBA5DE /* Pods-Feyddy高德地图大全.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feyddy高德地图大全.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feyddy高德地图大全/Pods-Feyddy高德地图大全.debug.xcconfig"; sourceTree = "<group>"; };
 		6D815830C8E3AD7BB1F86EB9 /* Pods-Feyddy高德地图大全.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feyddy高德地图大全.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feyddy高德地图大全/Pods-Feyddy高德地图大全.release.xcconfig"; sourceTree = "<group>"; };
-		B035E5E51E1DFAE300990740 /* FDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDMapViewController.h; sourceTree = "<group>"; };
-		B035E5E61E1DFAE300990740 /* FDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDMapViewController.m; sourceTree = "<group>"; };
 		B035E5E81E1DFB4D00990740 /* FDPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPrefix.pch; sourceTree = "<group>"; };
 		B035E5E91E1DFBCC00990740 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		B08B67731E1BAB99004A4A02 /* Feyddy高德地图大全.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feyddy高德地图大全.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,11 +64,18 @@
 		B08B67971E1BAB99004A4A02 /* Feyddy高德地图大全UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Feyddy高德地图大全UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08B679B1E1BAB99004A4A02 /* Feyddy______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Feyddy______UITests.m"; sourceTree = "<group>"; };
 		B08B679D1E1BAB99004A4A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0DC3D9E1E1E2B3B00694B00 /* FDCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCalloutView.h; sourceTree = "<group>"; };
-		B0DC3D9F1E1E2B3B00694B00 /* FDCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCalloutView.m; sourceTree = "<group>"; };
-		B0DC3DA11E1E2C4000694B00 /* FDAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAnnotationView.h; sourceTree = "<group>"; };
-		B0DC3DA21E1E2C4000694B00 /* FDAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAnnotationView.m; sourceTree = "<group>"; };
 		C1560960F23960392B865988 /* libPods-Feyddy高德地图大全.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Feyddy高德地图大全.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8676B901E1F5D590069A742 /* FDAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAnnotationView.h; sourceTree = "<group>"; };
+		F8676B911E1F5D590069A742 /* FDAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAnnotationView.m; sourceTree = "<group>"; };
+		F8676B921E1F5D590069A742 /* FDCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCalloutView.h; sourceTree = "<group>"; };
+		F8676B931E1F5D590069A742 /* FDCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCalloutView.m; sourceTree = "<group>"; };
+		F8676B941E1F5D590069A742 /* FDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDMapViewController.h; sourceTree = "<group>"; };
+		F8676B951E1F5D590069A742 /* FDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDMapViewController.m; sourceTree = "<group>"; };
+		F8676B991E1F5DD30069A742 /* FDGetMapDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDGetMapDataViewController.h; sourceTree = "<group>"; };
+		F8676B9A1E1F5DD30069A742 /* FDGetMapDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDGetMapDataViewController.m; sourceTree = "<group>"; };
+		F8676B9C1E1F5ED80069A742 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		F8676B9E1E1F5F3F0069A742 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		F8F6A9221E1E915900174587 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F6A9231E1E915900174587 /* CoreLocation.framework in Frameworks */,
+				F8676B9F1E1F5F3F0069A742 /* AMapFoundationKit.framework in Frameworks */,
 				7326A3B247610BDC90B2865B /* libPods-Feyddy高德地图大全.a in Frameworks */,
+				F8676B9D1E1F5ED80069A742 /* AMapSearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +110,7 @@
 		77B94E401C779A4406ACC59A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8F6A9221E1E915900174587 /* CoreLocation.framework */,
 				C1560960F23960392B865988 /* libPods-Feyddy高德地图大全.a */,
 			);
 			name = Frameworks;
@@ -133,13 +146,9 @@
 				B08B677C1E1BAB99004A4A02 /* ViewController.h */,
 				B08B677D1E1BAB99004A4A02 /* ViewController.m */,
 				B035E5E91E1DFBCC00990740 /* View.xib */,
-				B035E5E51E1DFAE300990740 /* FDMapViewController.h */,
-				B035E5E61E1DFAE300990740 /* FDMapViewController.m */,
-				B0DC3D9E1E1E2B3B00694B00 /* FDCalloutView.h */,
-				B0DC3D9F1E1E2B3B00694B00 /* FDCalloutView.m */,
-				B0DC3DA11E1E2C4000694B00 /* FDAnnotationView.h */,
-				B0DC3DA21E1E2C4000694B00 /* FDAnnotationView.m */,
 				B08B677F1E1BAB99004A4A02 /* Main.storyboard */,
+				F8676B8E1E1F5D590069A742 /* getMapData */,
+				F8676B8F1E1F5D590069A742 /* Map */,
 				B08B67821E1BAB99004A4A02 /* Assets.xcassets */,
 				B08B67841E1BAB99004A4A02 /* LaunchScreen.storyboard */,
 				B08B67871E1BAB99004A4A02 /* Info.plist */,
@@ -173,6 +182,30 @@
 				B08B679D1E1BAB99004A4A02 /* Info.plist */,
 			);
 			path = "Feyddy高德地图大全UITests";
+			sourceTree = "<group>";
+		};
+		F8676B8E1E1F5D590069A742 /* getMapData */ = {
+			isa = PBXGroup;
+			children = (
+				F8676B9E1E1F5F3F0069A742 /* AMapFoundationKit.framework */,
+				F8676B9C1E1F5ED80069A742 /* AMapSearchKit.framework */,
+				F8676B991E1F5DD30069A742 /* FDGetMapDataViewController.h */,
+				F8676B9A1E1F5DD30069A742 /* FDGetMapDataViewController.m */,
+			);
+			path = getMapData;
+			sourceTree = "<group>";
+		};
+		F8676B8F1E1F5D590069A742 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F8676B901E1F5D590069A742 /* FDAnnotationView.h */,
+				F8676B911E1F5D590069A742 /* FDAnnotationView.m */,
+				F8676B921E1F5D590069A742 /* FDCalloutView.h */,
+				F8676B931E1F5D590069A742 /* FDCalloutView.m */,
+				F8676B941E1F5D590069A742 /* FDMapViewController.h */,
+				F8676B951E1F5D590069A742 /* FDMapViewController.m */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		FE8D0CCFCDC30255991E8723 /* Pods */ = {
@@ -255,7 +288,7 @@
 				TargetAttributes = {
 					B08B67721E1BAB99004A4A02 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = NKCVL666K8;
+						DevelopmentTeam = 57EU58357H;
 					};
 					B08B678B1E1BAB99004A4A02 = {
 						CreatedOnToolsVersion = 7.2;
@@ -369,10 +402,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08B677E1E1BAB99004A4A02 /* ViewController.m in Sources */,
-				B035E5E71E1DFAE300990740 /* FDMapViewController.m in Sources */,
+				F8676B981E1F5D590069A742 /* FDMapViewController.m in Sources */,
+				F8676B961E1F5D590069A742 /* FDAnnotationView.m in Sources */,
 				B08B677B1E1BAB99004A4A02 /* AppDelegate.m in Sources */,
-				B0DC3DA31E1E2C4000694B00 /* FDAnnotationView.m in Sources */,
-				B0DC3DA01E1E2B3B00694B00 /* FDCalloutView.m in Sources */,
+				F8676B971E1F5D590069A742 /* FDCalloutView.m in Sources */,
+				F8676B9B1E1F5DD30069A742 /* FDGetMapDataViewController.m in Sources */,
 				B08B67781E1BAB99004A4A02 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +550,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Feyddy高德地图大全/getMapData",
+				);
 				GCC_PREFIX_HEADER = "Feyddy高德地图大全/FDPrefix.pch";
 				INFOPLIST_FILE = "Feyddy高德地图大全/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -530,6 +568,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Feyddy高德地图大全/getMapData",
+				);
 				GCC_PREFIX_HEADER = "Feyddy高德地图大全/FDPrefix.pch";
 				INFOPLIST_FILE = "Feyddy高德地图大全/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

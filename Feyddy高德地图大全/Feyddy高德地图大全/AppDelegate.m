@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import "ViewController.h"
-
+#import <AMapSearchKit/AMapSearchKit.h>
 @interface AppDelegate ()
 
 @end
@@ -30,7 +30,6 @@
     [self.window makeKeyAndVisible];
     
     [AMapServices sharedServices].apiKey = @"9b1b38992bf7c58f8f93dadd807aed37";
-    
     return YES;
 }
 
